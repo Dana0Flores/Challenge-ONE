@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D8DFE8;
+}
+.titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+    background: #D8DFE8;
+}
+
+main{
+    width: 100vh;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+.seccion__1{
+    width: 100%;
+    max-width: 30rem;
+    height: 100%;
+    max-height: 28rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.seccion__2{
+    width: 100%;
+    max-width: 24rem;
+    height: 100%;
+    max-height: 28rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.entrada-texto{
+    width: 100%;
+    max-width: 27rem;
+    height: 100%;
+    max-height: 20rem;
+    border: none;
+    padding: 0.1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #0A3871;
+    text-transform: lowercase;
+    text-size-adjust: 100%;
+    overflow-y: auto;
+}
+::placeholder{color: #0A3871;}
+    .entrada-texto:focus{
+        outline: none;
+    }
+
+.salida-texto{
+    width: 97%;
+    max-width: 23rem;
+    height: 100%;
+    max-height: 23rem;
+    border: none;
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1.3rem 2rem 1.3rem;
+    box-shadow: 0.06rem 0.4rem 0.5rem 0.2rem #DADDED;
+    overflow-y: auto;
+    background-color: white;
+    background-image: url("/img/diamante2.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1rem;
+    color: grey;
+    box-sizing: border-box;
+}
+.salida-texto:focus{
+    outline: none;
+}
+
+.imgMark{
+    height: 0.6rem;
+    margin-bottom: 0.06rem;
+    margin-top: 0;
+}
+
+.indicaciones{
+    color: #495057;
+    font-size: 0.75rem;
+    height: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.37rem;
+}
+
+.botones{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn-encriptar{
+    height: 3.4rem;
+    max-width: 11.5rem;
+    width: 100%;
+    margin-right: 2rem;
+    background-color: #0A3871;
+    border: 0.07rem solid #0A3871;
+    border-radius: 1.3rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.btn-encriptar:hover{
+    background-color: #edf5ff;
+    color: #0A3871;
+    box-shadow: 0.39rem 0.45rem 0.3rem 0rem #DADDED;
+}
+
+.btn-desencriptar{
+    height: 3.4rem;
+    max-width: 11.5rem;
+    width: 100%;
+    margin-right: 1rem;
+    background-color: #D8DFE8;
+    border: 0.07rem solid #0A3871;
+    border-radius: 1.3rem;
+    color: #0A3871;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+.btn-desencriptar:hover{
+    background-color: #edf5ff;
+    box-shadow: 0.39rem 0.45rem 0.3rem 0rem #DADDED;
+}
+
+.btn-borrar{
+    height: 3.3rem;
+    max-width: 6rem;
+    width: 100%;    
+    background-color: transparent;
+    border: none;
+    color: #0A3871;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-borrar:hover{
+    background-color: #edf5ff;
+    border: 0.07rem solid #D8DFE8;
+}
+
+.btn-copiar{
+    height: 3.4rem;
+    width: 11.5rem;
+    margin-top: 0.5rem;
+    border: 0.07rem solid #0A3871;
+    border-radius: 1.3rem;
+    color: #0A3871;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.btn-copiar:hover{
+    background-color: #edf5ff;
+    box-shadow: 0.39rem 0.45rem 0.3rem 0rem #DADDED;
+}
+
+footer{
+    height: 1rem;
+    width: 100%;
+    color: rgb(109, 109, 109);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    background-color: transparent;
+}
+footer>p{
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+}
+
+@media (max-width: 1300px){
+    .seccion__1{
+        width: 90%;
+        margin-left: 2rem;
+    }
+    .salida-texto{
+        width: 80%;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:640px) AND (max-width: 950px){
+    main{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .entrada-texto{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 640px){
+    header{
+        width: 100hv;
+        width: 100%;
+        height: 2rem;
+    }
+    .titulo{
+        font-size: 75%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion__2{
+        margin-top: 2rem;
+    }
+    .entrada-texto{
+        height: 12rem;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    .salida-texto{
+        height: 12rem;
+        margin-right: 0;
+        padding-bottom: 1.1rem;
+        font-size: 0.6rem;
+    }
+    .indicaciones{
+        font-size: 0.55rem;
+        margin-left: 1rem;
+    }
+    .botones{
+        margin-top: 0.8rem;
+        justify-content: space-evenly;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        margin-right: 0rem;
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+    .btn-borrar{
+        width: 3rem;
+        height: 1.9rem;
+        font-size: 0.7rem;
+    }
+    .btn-copiar{
+        width: 13rem;
+        height: 2rem;
+        margin-top: 0;
+        font-size: 0.7rem;
+    }
+    footer>p{
+        font-size: 0.4rem;
+    }
+
+}

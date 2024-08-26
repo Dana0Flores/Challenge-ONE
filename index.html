@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+
+    <main>
+        <section class="seccion__1">
+            <textarea class="entrada-texto" cols="35" rows="10" placeholder="Ingrese el texto aquí..." onkeypress="return sololetras(event)"></textarea>
+            <div>
+                <p class="indicaciones"> <img class="imgMark" src="img/mark.png" alt="Exclamation mark">Solo letras minúsculas y sin acentos.</p>
+                <p class="indicaciones"> <img class="imgMark" src="img/mark.png" alt="Exclamation mark">No se permiten caracteres especiales.</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btn-borrar" onclick="btnBorrar()">Borrar</button>
+            </div>
+        </section>
+
+        <section class="seccion__2">
+            <textarea class="salida-texto" cols="30" rows="13" id="salidaText"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copiar()" id="copiarbtn" disabled>Copiar</button>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Dana Flores</p>
+        <p>Agosto 2024</p>
+    </footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
